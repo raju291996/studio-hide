@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/logo.png" width="50px" height="50px">
+    <title>Studio HIDE</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="op-container-1 header-contact" id="header-contact">
+        <div class="nav">
+            <div class="logo"><a href="index.html"><b>HIDE</b></a></div>
+            <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <a href="index.html" class="home">Home</a>
+                 <a href="our_products.html">Our products</a>
+                 <a href="prices.html">Prices</a>
+                 <a href="contact.html" class="active">Contact us</a>
+            </div>
+            <div class="menu" onclick="openNav()"><img src="images/menu.png" width="28px" height="28px"/></div>
+            <div class="clear"></div>
+        </div>
+        <div class="page-header"><p>Contact</p></div>
+    </div>
+    
+    <div class="row2 widget1-div2 row2-widget2-1-div2 contact-row2">
+              <div class="col-md-4 border-right">
+                  <div style="height:110px;"><div class="img1-c imgc"><img src="images/direction-signs.png"/></div></div>
+                  <h4>Address</h4>
+                  <p>143, Gandhi Road, Dehradoon</p>
+                  <p>Uttrakhand, India</p>
+              </div>
+              <div class="col-md-4 border-right">
+                  <div style="height:110px;"><div class="img1-c imgc"><img src="images/and-app.png"/></div></div>
+                  <h4>Telephone</h4>
+                  <p>You can call reach us at:</p>
+                  <p>(+91) 7014561976</p>
+              </div>
+              <div class="col-md-4">
+                  <div style="height:110px;"><div class="img1-c imgc"><img src="images/mail-black-envelope-symbol.png"/></div></div>
+                  <h4>Send us a mail</h4>
+                  <p>Got a question?</p>
+                  <p><a href="#contact-mail" style="text-decoration:none;color:#3ab58e">Get in touch</a></p>
+              </div>
+              <div class="clear"></div>
+          </div>
+    
+    <div class="contact-map" id="map"></div>
+    
+    <div class="contact-mail" id="contact-mail">
+        <div class="div1">
+            <div class="error"><p></p></div>
+            <form method="post" action="">
+                <label>Your Name</label><br>
+                <input type="text" class="input-en" name="name" placeholder="Enter name..."><br>
+                <span></span><br>
+                <label>Your Email</label><br>
+                <input type="text" class="input-en" name="email" placeholder="Enter email..."><br>
+                <span></span><br>
+                <label>Message</label><br>
+                <textarea placeholder="Enter message..."></textarea><br>
+                <span></span><br>
+                <input type="submit" name="submit" class="submit-btn">
+            </form>
+        </div>
+    </div>
+    
+      <div class="container-6">
+          <a href="#" class="s-link"><img src="images/linkedin-logo.png"/></a>
+          <a href="#" class="s-link"><img src="images/facebook-logo.png"></a>
+          <a href="#" class="s-link"><img src="images/twitter-black-shape.png"></a>
+          <p class="p1">Get in touch</p>
+          <p class="p2">We can create something awesome together</p>
+          <a href="#contact-mail" class="mail-us">Mail us</a>
+          <p class="p3">Copyright © 2016 Studio Hide</p>
+          <div class="back-to-top"><a href="#header-contact"><img src="images/up-arrow.png"/></a></div>
+      </div>
+    <script src="js/script.js"></script>
+   <script>
+      function initMap() {
+        var uluru = {lat: 30.31, lng: 78.03};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru,
+            zoomControl: false,
+            scaleControl: false,
+            disableDoubleClickZoom: true,
+            scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZy3j6oFR9jeLQ4c9m2LMIwvzNXmefOD0&callback=initMap">
+    </script>
+</body>
+</html>
